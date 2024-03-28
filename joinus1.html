@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Clean Energy Initiative</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    
+  </head>
+  <body>
+    <div class="solpage1">
+        <div class="nav">
+            <a href="index.html"><img src="logofinal.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="Problems.html"><i class="fa-solid fa-bolt"></i>  The Problem</a></li>
+                <li><a href="Solutions.html"><i class="fa-solid fa-tree"></i> The Solution</a></li>
+                <li><a href="costs.html"><i class="fa-solid fa-sack-dollar "></i>  Costs</a></li>
+                <li>
+                    <div class="dropdown">
+                    <a href="joinus1.html"><p id="book-now"><i class="fa-solid fa-handshake-angle"></i> Join Us</p></a>
+                    <div class="dropdown-content">
+                      <a href="Join_us.html">Global Initiatives</a>
+    
+                    </div>
+                </div></li>
+    
+    
+            </ul>
+    
+        </div>
+        <div class="Solutiontitle1">
+           
+            
+            
+            <h1>Join us</h1>
+            <p>Support the cause!<br>It is our goal to create a more sustainable world. Here's how you can help.</p>
+
+        
+        </div> 
+        <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>      
+    </div>
+    <section class="form-container">
+
+        <p></p>
+         <h1>Want to leave a mark?</h1>
+            <h2>Check out some of our global initiatives to learn more about what we stand for.</h2>
+            <div id="lastbtn"class="divbtn2"><a href="Join_us.html" class="problembtn2" style="--clr:#e39d5c"><span class="btnproblem">Global Initiative</span></a></div>
+         <h2>See the form below to contribute to our initiative!</h2>   
+            
+        <label for="number">Enter the dollar amount you wish to donate:</label>
+        <input type="number" placeholder="Dollar Amount" name="number" id="number" required="">
+        <p></p>
+        <label for="name">What is your full name?</label>
+        <input type="text" placeholder="Full Name" name="name" id="name" required="">
+        <p></p>
+        <label for="duration">Select the type of inititiative you would like to donate to:</label>
+        <p></p>
+        <select id="duration" name="duration">
+            <option value="1-3 months">Wind Energy</option>
+            <option value="3-12 months">Solar Energy</option>
+            <option value="1-3 years">Geothermal Energy</option>
+   
+        </select>
+        <p></p>
+       
+        <button id="submit" class="bouncy">Submit</button>
+        <p></p>
+        <p></p>
+        
+    </section>
+ 
+
+
+ 
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</script>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<script type="text/javascript">
+    let progress = document.getElementById('progressbar'
+    );
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+
+
+</script>
+
+</html>
+
+
+
+

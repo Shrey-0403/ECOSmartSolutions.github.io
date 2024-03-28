@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    
+
+
+    <title>The Problem</title>
+
+</head>
+
+<body>
+    <div class="problemhome">
+      <div class="nav">
+        <a href="index.html"><img src="logofinal.png" class="logo"></a>
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="Problems.html"><i class="fa-solid fa-bolt"></i>  The Problem</a></li>
+            <li><a href="Solutions.html"><i class="fa-solid fa-tree"></i> The Solution</a></li>
+            <li><a href="costs.html"><i class="fa-solid fa-sack-dollar "></i>  Costs</a></li>
+            <li>
+                <div class="dropdown">
+                <a href="joinus1.html"><p id="book-now"><i class="fa-solid fa-handshake-angle"></i> Join Us</p></a>
+                <div class="dropdown-content">
+                  <a href="Join_us.html">Global Initiatives</a>
+
+                </div>
+            </div></li>
+
+
+        </ul>
+
+    </div>
+        <div class="Problemtitle">
+            <h1 class="probtit">The Problem</h1>
+            <p class="probp">Though effective, there are glaring problems with burning fossils fuels for energy</p>
+        
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    
+    </div>
+    <section class="problemintro">
+        <h1 class="probintt">Fossil Fuels: The Problem</h1>
+        <p class="probintp">Fossil fuels are vital to both industry, and our basic everyday lives.<br>
+          Scroll through the page to learn more about them!
+          <br<br></p>      
+        <h2 class="impactenv">How do Fossil Fuels Impact the Environment?</h2>
+        <p class="probintp">Click through the process below to see the way in which Fossil fuels negatively affect our environment</p>
+        <div class="process-wrapper" data-aos="fade-up">
+            <div id="progress-bar-container">
+                <ul>
+                    <li class="step step01 active"><div class="step-inner">Step One</div></li>
+                    <li class="step step02"><div class="step-inner">Step Two</div></li>
+                    <li class="step step03"><div class="step-inner">Step Three</div></li>
+                    <li class="step step04"><div class="step-inner">Step Four</div></li>
+                    <li class="step step05"><div class="step-inner">Step Five</div></li>
+                </ul>
+                
+                <div id="line">
+                    <div id="line-progress"></div>
+                </div>
+            </div>
+            
+            <div id="progress-content-section">
+                <div class="section-content discovery active">
+                    <h2>Extracting Fossil Fuels</h2>
+                    <p>The process of extracting fossil fuels like coal, oil, and gas disrupts ecosystems through activities like mining, drilling, and fracking. 
+                        This has lead to a great deal of habitat loss, wildlife displacement, and soil contamination. The World Wildlife fund has found that every hour, there are two square kilometers of land destroyed and habitats lost due to coal mining alone. ⁤</p>
+                </div>
+                
+                <div class="section-content strategy">
+                    <h2>Combustion of Fossil Fuels</h2>
+                    <p>When burned in power plants, vehicles, and industrial facilities, fossil fuels release greenhouse gases, primarily carbon dioxide, but also methane and nitrous oxide, into the atmosphere. These gases trap heat, causing a gradual warming of the planet.
+                    </p>
+                </div>
+                
+                <div class="section-content creative">
+                    <h2>The Greenhouse Effect</h2>
+                    <p>The buildup of greenhouse gases in the atmosphere acts like a blanket, trapping heat and causing global warming. This warming disrupts weather patterns, leading to more frequent and intense heat waves, droughts, floods, wildfires, and other extreme weather events. This greatly affects the agricultural industry and farmers' crop yields.
+                    </p>
+                </div>
+                
+                <div class="section-content production">
+                    <h2>Ocean Acidification</h2>
+                    <p>About a quarter of the carbon dioxide released from burning fossil fuels gets absorbed by the oceans. This dissolves in the water, making it more acidic, a process known as ocean acidification. This harms marine life, especially organisms with shells and skeletons made of calcium carbonate, disrupting ocean ecosystems.
+                    </p>
+                </div>
+                
+                <div class="section-content analysis">
+                    <h2>Impact on Human Health and Well-Being</h2>
+                    <p>The consequences of climate change caused by burning fossil fuels have widespread impacts on human health and well-being. Heat stress, respiratory problems due to air pollution, food insecurity due to disrupted agriculture, and displacement due to extreme weather events are just some of the challenges faced by communities around the world.</p>
+                </div>
+                </div>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+             <script>
+                
+                $(".step").click( function() {
+                $(this).addClass("active").prevAll().addClass("active");
+                $(this).nextAll().removeClass("active");
+            });
+            
+            $(".step01").click( function() {
+                $("#line-progress").css("width", "3%");
+                $(".discovery").addClass("active").siblings().removeClass("active");
+            });
+            
+            $(".step02").click( function() {
+                $("#line-progress").css("width", "25%");
+                $(".strategy").addClass("active").siblings().removeClass("active");
+            });
+            
+            $(".step03").click( function() {
+                $("#line-progress").css("width", "50%");
+                $(".creative").addClass("active").siblings().removeClass("active");
+            });
+            
+            $(".step04").click( function() {
+                $("#line-progress").css("width", "75%");
+                $(".production").addClass("active").siblings().removeClass("active");
+            });
+            
+            $(".step05").click( function() {
+                $("#line-progress").css("width", "100%");
+                $(".analysis").addClass("active").siblings().removeClass("active");
+            });
+            
+             
+                </script>
+              <p class="probintp"> Data collected suggests that over 70% of all energy that is used today stems from the burning and utilization of fossil fuels!<br>
+                However, as shown above, fossil fuels have been observed to inflict dire consequences on our society and environment as a whole.
+                <br<br></p>    
+      <div class="border">
+        <p class="dd">The Graph Below shows the percentage of energy sourced from Fossil fuels in the last 5 decades.</p> 
+        <div class="chart">
+            <ul class="numbers">
+            <li><span>100%</span>   </li>
+            <li><span>50%</span></li>
+            <li><span>0%</span></li>
+            </ul>
+            <ul class="bars">
+            <li><div class="bar" data-percentage="80"></div><span>1970s</span></li>
+            <li><div class="bar" data-percentage="76"></div><span>1980s</span></li>
+            <li><div class="bar" data-percentage="79"></div><span>1990s</span></li>
+            <li><div class="bar" data-percentage="81"></div><span>2000s</span></li>
+            <li><div class="bar" data-percentage="80"></div><span>2010s</span></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        $(function(){
+    $('.bars li .bar').each(function(key, bar){
+        var percentage = $(this).data('percentage');
+        var adjustedPercentage = (percentage / 100) * 97; // Adjusted percentage calculation
+        $(this).animate({
+            'height' : adjustedPercentage + '%'
+        }, 500);
+    });
+});
+        </script>
+        <p class="probintp1"> As seen above, even though there have been huge technological advancements, the usage of fossil fuels remains constant even though many other, more eco-friendly energy sources have been discovered.<br></p>
+       
+       
+        </div>
+
+    </div>
+    
+    
+        
+    
+    </section>
+
+    
+
+
+
+
+
+
+    </section>
+
+    <section class="energysource1">
+        <h1 data-aos="fade-down" class="divedeep">Dive Deeper</h1>
+        <p data-aos="fade-down" class="hoverc"> Hover over the cards below to learn more about the advantages, and disadvantages of using fossil fuels!</p>
+        <div class="row1">
+            <div class="column" data-aos="fade-up">
+              
+              <div class="container">
+                <div class="card1">
+                  <div class="front"></div>
+                  <div class="back">
+                    <h1>Coal</h1>
+                    <p>
+                        Coal, a carbon-rich sedimentary rock, is extracted from mines and processed to remove impurities. It's then transported to power plants by train or boat. It's primarily used for 
+                        electricity generation, steel production, and heating. Coal remains a significant global energy source despite declining consumption in some regions.
+                    </p>
+                    <h2>Advantages</h2>
+                    <ul>
+                      <li>
+                        Has extremely low extraction costs and is found in caves in abundance
+                      </li>
+                      <li>
+                        Coal has consistent availability and well-established extraction
+                        infrastructure dating centuries back
+                      </li>
+                      <li>
+                        Can be converted into liquid and gas forms providing more opportunities
+                        for use
+                      </li>
+                    </ul>
+                    <h2>Disadvantages</h2>
+                    <ul>
+                      <li>
+                        Burning a ton of coal results in over 2 tons of carbon dioxide emissions
+                      </li>
+                      <li>Rigorous and laborious transportation requirements</li>
+                      <li>
+                        Extract puts workers at extreme risk of health problems including
+                        respiratory disease and fatality
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+            <div class="column" data-aos="fade-up">
+              
+              <div class="container">
+                <div class="card1">
+                  <div class="front1" id=""></div>
+                  <div class="back">
+                    <h1>Petroleum</h1>
+    <p>
+      Petroleum, a natural mix of hydrocarbons extracted from underground,
+      yields products like gasoline, diesel, and jet fuel. Through combustion,
+      it releases heat converted into mechanical energy, powering vehicles and
+      generating electricity. Historically, it's been the most consumed energy
+      source in the U.S.
+    </p>
+    <h2>Advantages</h2>
+    <ul>
+      <li>
+        Cheaper and more abundant than most sources of energy, being present at
+        all corners of the globe
+      </li>
+      <li>Very productive, with a high energy output per unit of input</li>
+    </ul>
+    <h2>Disadvantages</h2>
+    <ul>
+      <li>Oil contributes 353 metric tons of CO2 in US</li>
+      <li>
+        Oil spills can occur, which destroys wildlife and causes long-lasting
+        damage to marine ecosystems
+      </li>
+      <li>
+        Drilling for oil occupies a lot of land and alters environmental
+        processes
+      </li>
+    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column" data-aos="fade-up" >
+              
+              <div class="container">
+                <div class="card1">
+                  <div class="front2"></div>
+                  <div class="back">
+                    <h1>Natural Gas</h1>
+                    <p>
+                      Natural gas is composed of methane. It's drilled from underground
+                      reservoirs using drilling techniques, and is processed and purified. It's
+                      then is transported from production sites to consumers via pipelines or
+                      liquified natural gas tankers. Consumers commonly use it for heat and
+                      electricity production, and in cooking on stovetop.
+                    </p>
+                    <h2>Advantages</h2>
+                    <ul>
+                      <li>
+                        Most efficient nonrenewable energy source, producing half as much carbon
+                        dioxide
+                      </li>
+                      <li>
+                        Readily available; Found in abundance in underground reservoirs across
+                        all inhabited continents
+                      </li>
+                      <li>
+                        Inexpensive, as it has low extraction costs and underground pipelines
+                        are very cost efficient.
+                      </li>
+                    </ul>
+                    <h2>Disadvantages</h2>
+                    <ul>
+                      <li>Still emits 117 pounds of carbon dioxide per ton of natural gas</li>
+                      <li>High volume, takes more labor to transport</li>
+                      <li>
+                        Pipelines cause habitat fragmentation as forests are cleared in their
+                        construction
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+
+
+
+    </section>
+    
+    
+    <section class="probfinal">
+      <p class="probfinalp">As seen above, there are advantages to using fossil fuels, and we cannot fully stop using them for our energy sources.<br> 
+      However, the disadvantages and the impact on the environment makes it so that fossil fuels are not sustainable to use in the long run for our earth.
+     To avoid the negative impacts of fossil fuels, a more sustainable way of providing our world with energy involves harnessing the power of our natural resources that are infinite. Click the button below to learn more about them!</p>
+      
+    </section>
+    <div class="divbtn"><a href="Solutions.html" class="problembtn1" style="--clr:#e39d5c"><span class="btnproblem">Learn More!</span></a></div>
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+     <div id="progressbarr"></div>
+     <div id="scrollPathh"></div>
+     <script type="text/javascript">
+         let progress = document.getElementById('progressbarr'
+         );
+         let totalHeight = document.body.scrollHeight - window.innerHeight;
+         window.onscroll = function(){
+             let progressHeight = (window.pageYOffset / totalHeight) * 100;
+             progress.style.height = progressHeight + "%";
+         }
+
+
+     </script>
+</body>
+<footer class="footer">
+  <h2 class="footerh2">Contact us here!</h2>
+    
+  <div class="wrapper">
+     <div class="button">
+        <div class="icon">
+           <i class="fab fa-facebook-f"></i>
+        </div>
+        <span>Facebook</span>
+     </div>
+
+     <div class="button">
+        <div class="icon">
+           <i class="fab fa-instagram"></i>
+        </div>
+        <span>Instagram</span>
+     </div>
+     <div class="button">
+        <div class="icon">
+           <i class="fab fa-github"></i>
+        </div>
+        <span>Github</span>
+     </div>
+     <div class="button">
+        <div class="icon">
+           <i class="fab fa-youtube"></i>
+        </div>
+        <span>YouTube</span>
+     </div>
+  </div>
+</footer>
+</html>
